@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/temp_bg_main"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- Layout bên trái -->
+
+        <LinearLayout
+            android:id="@+id/doctrai"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/temp_bg_me"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <!-- android:background="@drawable/right" -->
+
+            <ImageView
+                android:id="@+id/btnlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/temp_title_me" />
+
+            <ImageView
+                android:id="@+id/btnSexCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_thumbnail_shimajiro" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_country" />
+
+                <TextView
+                    android:id="@+id/txtCountryNameCrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="Japan"
+                    android:textColorHint="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnFlagCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_japan" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_irocchi" />
+
+                <TextView
+                    android:id="@+id/txtIrocchiMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="my Irocchi"
+                    android:textColorHint="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="30dp"
+                android:src="@drawable/creating" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/giua"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="100dp" 
+            >
+
+            <FrameLayout
+                android:id="@+id/frame_crop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background" 
+                android:paddingBottom="80dp">
+
+                <ImageButton
+                    android:id="@+id/capture_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:background="@drawable/btn_selector"
+                    android:layout_marginLeft="240dp"
+                    android:src="@drawable/btn_060_again" />
+
+                <ImageButton
+                    android:id="@+id/capture_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="240dp"
+                    android:src="@drawable/btn_060_save" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <!-- Layout bên phải màn hình -->
+
+        <LinearLayout
+            android:id="@+id/docphai"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/temp_bg_friend"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <!-- android:background="@drawable/left" -->
+
+            <ImageView
+                android:id="@+id/btnlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/temp_title_friend" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_thumbnail_mimirin" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_country" />
+
+                <TextView
+                    android:id="@+id/txtCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="U.S."
+                    android:textColorHint="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnRecord2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_us" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_irocchi" />
+
+                <TextView
+                    android:id="@+id/txtIrocchiFriends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="Friend&apos;s Irocchi"
+                    android:textColorHint="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="30dp"
+                android:src="@drawable/creating" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Tiltle for Irocchi -->
+
+    <LinearLayout
+        android:id="@+id/title_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/temp_bg_header"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp" >
+
+        <ImageButton
+            android:id="@+id/btn_crop_back"
+            android:layout_width="80dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:src="@drawable/temp_back_button" />
+
+        <ImageView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:src="@drawable/temp_title_m" />
+
+        <ImageButton
+            android:id="@+id/btn_crop_home"
+            android:layout_width="80dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:src="@drawable/temp_home_button" />
+    </LinearLayout>
+
+</RelativeLayout>

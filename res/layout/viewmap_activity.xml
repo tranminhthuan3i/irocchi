@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeMainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/temp_bg_main"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- Layout bên trái -->
+
+        <LinearLayout
+            android:id="@+id/layout_left_nemu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/temp_bg_me"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/temp_title_me" />
+
+            <ImageView
+                android:id="@+id/btn_me_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_thumbnail_shimajiro" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/btndowload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_country" />
+
+                <TextView
+                    android:id="@+id/txtCountryNameMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="Japan"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:padding="5.0dip"
+                android:src="@drawable/temp_japan" />
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_irocchi" />
+
+                <TextView
+                    android:id="@+id/txtIrocchiShowmap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="my Irocchi"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/irocchiShowmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                 />
+        </LinearLayout>
+
+        <!-- Layout ở giữa màn hình -->
+
+        <LinearLayout
+            android:id="@+id/layout_center"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="6.5"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="50.0dip"
+                    android:paddingRight="50.0dip" >
+
+                    <org.osmdroid.views.MapView
+                        android:id="@+id/mapview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@+id/btn_loadingCounttry"
+                        android:clickable="true" >
+                    </org.osmdroid.views.MapView>
+
+                    <Button
+                        android:id="@+id/btn_loadingCounttry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/btn_selector"
+                        android:padding="20.0dip"
+                        android:text="@string/loadingCountry"
+                        android:textStyle="italic" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="200dp"
+                        android:layout_toLeftOf="@+id/btn_loadingCounttry"
+                        android:src="@drawable/bg_searching" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imageView2"
+                        android:layout_alignTop="@+id/imageView2"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="83dp"
+                        android:src="@drawable/title_searching" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip" >
+
+                <Button
+                    android:id="@+id/btn_next_to_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50.0dip"
+                    android:paddingRight="50.0dip"
+                    android:text="@string/btnOk"
+                    android:textColor="@color/green"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Layout bên phải màn hình -->
+
+        <LinearLayout
+            android:id="@+id/layout_right_nemu"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_friend"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/temp_title_friend" />
+
+            <ImageView
+                android:id="@+id/btn_friend_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_thumbnail_mimirin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_country" />
+
+                <TextView
+                    android:id="@+id/txtCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="U.S."
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cameracomposite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:src="@drawable/temp_us" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_irocchi" />
+
+                <TextView
+                    android:id="@+id/txtIrocchiShowmap111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="my Irocchi"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/irocchiShowmapR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Tiltle for Irocchi -->
+
+    <LinearLayout
+        android:id="@+id/layout_top_nemu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/temp_bg_header"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:src="@drawable/index_btn_back" />
+
+        <ImageView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:src="@drawable/temp_title_m" />
+
+        <ImageButton
+            android:id="@+id/btn_back_totop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:src="@drawable/index_btn_totop" />
+    </LinearLayout>
+
+</RelativeLayout>

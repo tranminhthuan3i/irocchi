@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundirocchinew"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/layout_btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25.0dp"
+        android:layout_marginTop="130.0dip"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingRight="40.0dip" >
+
+        <ImageButton
+            android:id="@+id/imgbFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10.0dip"
+            android:src="@drawable/btn_home_irocchi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="      Learn with \nthe color and world "
+            android:textColor="#FFFFFF"
+            android:textSize="30.0dip"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/Learn1"
+            android:textColor="#FFFFFF"
+            android:textSize="40.0dip"
+            android:textStyle="bold" />
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/friend"
+            android:textColor="#FFFFFF"
+            android:textSize="30.0dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25.0dp"
+        android:layout_marginTop="110.0dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="40.0dip" >
+
+        <ImageButton
+            android:id="@+id/iconiroochi_family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip"
+            android:src="@drawable/btn_education" />
+
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="           Learn with \nthe educational materials"
+            android:textColor="#FFFFFF"
+            android:textSize="30.0dip"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/Family1"
+            android:textColor="#FFFFFF"
+            android:textSize="40.0dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The application is for a demo"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="left"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The information displayed in this app is not accurate information"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="right"/>
+    </LinearLayout>
+
+</LinearLayout>

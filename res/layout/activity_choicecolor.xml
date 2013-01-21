@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/temp_bg_main"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- Layout bên trái -->
+
+        <LinearLayout
+            android:id="@+id/doctrai"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/temp_bg_me"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <!-- android:background="@drawable/right" -->
+
+            <ImageView
+                android:id="@+id/btnlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/temp_title_me" />
+
+            <ImageView
+                android:id="@+id/btnSexSelectColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_thumbnail_shimajiro" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_country" />
+
+                <TextView
+                    android:id="@+id/txtCountryNameSelectColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="Japan"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnRecord111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_japan" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_irocchi" />
+
+                <TextView
+                    android:id="@+id/txtIrocchiMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="my Irocchi"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/getColor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/creating"
+                android:background="@android:color/transparent"
+                />
+
+        </LinearLayout>
+
+        <!-- Layout ở giữa màn hình -->
+
+        <RelativeLayout
+            android:id="@+id/giua"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="140dp"
+                android:src="@drawable/title_select" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:onClick="choiceIrocchiColor"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/btn_selector"
+                android:src="@drawable/akacchi" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="choiceIrocchiColor"
+                android:layout_alignTop="@+id/imageButton3"
+                android:background="@drawable/btn_selector"
+                android:src="@drawable/midoricchi" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/imageView1"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="148dp"
+                android:onClick="choiceIrocchiColor"
+                android:background="@drawable/btn_selector"
+                android:src="@drawable/aocchi" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_alignTop="@+id/imageButton1"
+                android:layout_marginLeft="174dp"
+                android:onClick="choiceIrocchiColor"
+                android:background="@drawable/btn_selector"
+                android:src="@drawable/kiirocchi" />
+
+        </RelativeLayout>
+
+        <!-- Layout bên phải màn hình -->
+
+        <LinearLayout
+            android:id="@+id/docphai"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/temp_bg_friend"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <!-- android:background="@drawable/left" -->
+
+            <ImageView
+                android:id="@+id/btnlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/temp_title_friend" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_thumbnail_mimirin" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_country" />
+
+                <TextView
+                    android:id="@+id/txtCountry1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="U.S."
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnRecord2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_us" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_irocchi" />
+
+                <TextView
+                    android:id="@+id/txtIrocchiFriends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="Friend&apos;s Irocchi"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="40dp"
+                android:src="@drawable/creating" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Tiltle for Irocchi -->
+
+    <LinearLayout
+        android:id="@+id/title_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/temp_bg_header"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp" >
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="80dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:src="@drawable/temp_back_button" />
+
+        <ImageView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:src="@drawable/temp_title_m" />
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="80dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:src="@drawable/temp_home_button" />
+    </LinearLayout>
+
+</RelativeLayout>

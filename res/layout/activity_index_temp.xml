@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- Layout bên trái -->
+        <LinearLayout
+            android:id="@+id/layout_left_nemu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_me"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+        <!-- Layout ở giữa màn hình -->
+        <LinearLayout
+            android:id="@+id/layout_center"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+        
+        <!-- Layout bên phải màn hình -->
+        <LinearLayout
+            android:id="@+id/layout_right_nemu"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_friend"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+
+         
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Tiltle for Irocchi -->
+
+    <LinearLayout
+        android:id="@+id/layout_top_nemu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/temp_bg_header"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector" 
+            android:src="@drawable/index_btn_back" />
+
+        <ImageView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:src="@drawable/temp_title_m" />
+
+        <ImageButton
+            android:id="@+id/btn_back_totop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"  
+            android:src="@drawable/index_btn_totop"/>
+    </LinearLayout>
+
+</RelativeLayout>

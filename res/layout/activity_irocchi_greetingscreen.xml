@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/temp_bg_main"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- Layout bên trái -->
+
+        <LinearLayout
+            android:id="@+id/doctrai"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/temp_bg_me"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <!-- android:background="@drawable/right" -->
+
+            <ImageView
+                android:id="@+id/btnlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/temp_title_me" />
+
+            <ImageView
+                android:id="@+id/btnSexGreeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_thumbnail_shimajiro" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="0dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_country" />
+
+                <TextView
+                    android:id="@+id/txtCountryNameGreeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0dp"
+                    android:text="Japan"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnFlagGreeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_japan" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="0dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_irocchi" />
+
+                <TextView
+                    android:id="@+id/txtIrocchiMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="my Irocchi"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgBIRCLeftBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="0dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/irocchiplying1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/giua"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:paddingTop="150dp" >
+
+            <LinearLayout 
+                android:id="@+id/twoIrocchi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="200dp">
+
+                <ImageButton
+                    android:id="@+id/imgBlefttIrocchi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="90dp"
+                    android:background="@drawable/btn_selector"
+                    android:src="@drawable/righthand_akacchiresize1" />
+
+                <ImageButton
+                    android:id="@+id/imgBrightIrocchi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:background="@drawable/btn_selector"
+                    android:src="@drawable/lefthand_aocchiresize1" />
+                
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Layout bên phải màn hình -->
+
+        <LinearLayout
+            android:id="@+id/docphai"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/temp_bg_friend"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <!-- android:background="@drawable/left" -->
+
+            <ImageView
+                android:id="@+id/btnlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/temp_title_friend" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_thumbnail_mimirin" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="0dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_country" />
+
+                <TextView
+                    android:id="@+id/txtCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="U.S."
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnRecord2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_us" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/temp_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingTop="0dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp_icon_irocchi" />
+
+                <TextView
+                    android:id="@+id/txtIrocchiFriends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="Friend&apos;s Irocchi"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgBIRCRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="0dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/irocchiplying2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Tiltle for Irocchi -->
+
+    <LinearLayout
+        android:id="@+id/title_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/temp_bg_header"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="5dp" >
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/temp_title_m" />
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+           />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Irocchi</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="titleTenDangNhap">User Name :</string>
+    <string name="titleMatKhau">Password :</string>
+    <string name="titleHomeTaiKhoan">Acount</string>
+    <string name="textbtnDangNhap">Login </string>
+    <string name="loadingCountry">Loading Country ....</string>
+    <string name="btnStart">START </string>
+    <string name="btnOk">OK</string>
+    <string name="btnCancel">Cancel </string>
+    <string name="status_text_default">Please input URL to download.</string>
+    <string name="progress_dialog_title_downloading">downloading&#8230;</string>
+    <string name="progress_dialog_title_connecting">Connecting&#8230;</string>
+    <string name="progress_dialog_message_prefix_downloading">downloading</string>
+    <string name="progress_dialog_message_prefix_connecting">connecting</string>
+    <string name="user_message_download_completes">download success !</string>
+    <string name="user_message_download_canceled">download confuse !</string>
+    <string name="error_message_bad_url">Error: URL confuse !</string>
+    <string name="error_message_connect_networks">Error: Error connecting. Please check again !</string>
+    <string name="error_message_general">Error: Tải file!</string>
+    <string name="Name1">Me</string>
+    <string name="Learn">  Learn with \nthe color and world </string>
+    <string name="Learn1">with friends!</string>
+    <string name="friend"></string>
+    <string name="Family">            Learn with \n the educational materials</string>
+<string name="Family1">with your family!</string>
+    <string name="Select">Select my Country</string>
+ <string name="versionIrocchi">・The application is for a demo \n ・The information displayed in this app \n is not accurate information
+     
+</string>
+    <!-- Path to save Image and Video in SDCard -->
+
+    <string name="capture_picture_local">Irocchi/Pictures/local</string>
+    <string name="capture_picture_server">Irocchi/Pictures/server</string>
+    <string name="crop_picture_local">Irocchi/Pictures/local/ICrop</string>
+    <string name="crop_picture_server">Irocchi/Pictures/server/ICrop</string>
+    <string name="capture_picture_with_friends">Irocchi/Pictures/local_server</string>
+    
+    <string name="audio_local">Irocchi/Audios/local</string>
+    <string name="audio_server">Irocchi/Audios/server</string>
+    <!-- finish -->
+
+</resources>

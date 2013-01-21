@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="LoginWS">http://117.6.131.222:81/irocchi/wslogin.php</string>
+    <string name="RegistryWS">http://117.6.131.222:81/irocchi/wsuserregistry.php</string>
+    <string name="Updatesex">http://117.6.131.222:81/irocchi/wsusersexupdate.php</string>
+</resources>
